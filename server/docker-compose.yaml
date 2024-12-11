@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+    container_name: weather-api
+    env_file:
+      - .env
+    ports:
+      - '8080:3000'
